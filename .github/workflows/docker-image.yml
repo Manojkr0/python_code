@@ -67,7 +67,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: .
-          file: docker/Dockerfile
+          file: app/Dockerfile
           push: true
-          tags: manojkumar8008/myapp:latest
+          tags: manojkumar8008/myapp1:latest
 

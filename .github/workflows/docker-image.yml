@@ -70,5 +70,5 @@ jobs:
         with:
           context: ./app
           push: true
-          tags: username/myapp:latest
+          tags: manojkumar8080/myapp:latest
 

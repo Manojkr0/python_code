@@ -87,7 +87,7 @@ jobs:
 
       - name: Deploy Docker container on EC2
         run: |
-          ssh -i ~/.ssh/id_rsa ${{ vars.EC2_USER }}@${{ secrets.EC2_HOST }} << 'EOF'
+          ssh -i ~/.ssh/id_rsa ${{ vars.EC2_USER }}@${{ vars.EC2_HOST }} << 'EOF'
             docker pull manojkumar8008/myapp1:latest
             docker stop myapp || true
             docker rm myapp || true

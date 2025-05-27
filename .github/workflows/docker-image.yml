@@ -78,7 +78,7 @@ jobs:
       - name: Setup SSH key
         run: |
           mkdir -p ~/.ssh
-          echo "${{ secrets.EC2_SSH_KEY }}" > ~/.ssh/id_rsa
+          echo -e "${{ secrets.EC2_SSH_KEY }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
 
       - name: Add EC2 host to known hosts
@@ -93,5 +93,5 @@ jobs:
             docker rm myapp || true
             docker run -d --name myapp -p 80:8000 manojkumar8008/myapp1:latest
           EOF
-          
+
 

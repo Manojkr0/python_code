@@ -1,4 +1,3 @@
-
 import json
 
 def hello(event, context):
@@ -7,5 +6,5 @@ def hello(event, context):
         'body': json.dumps({
             'message': 'Hello Lambda!',
             'version': '1.0'
-        })
-    }
+        })
+    }

@@ -10,7 +10,8 @@ env:
   PYTHON_VERSION: 3.11
   AWS_REGION: us-east-1
   ECR_REPOSITORY: meta/hello-world 
-  LAMBDA_FUNCTION_NAME: lamdanew2234
+  LAMBDA_FUNCTION_NAME: python-app
+  
 permissions:
   id-token: write
   contents: read

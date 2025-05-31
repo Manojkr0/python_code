@@ -9,7 +9,10 @@ on:
 env:
   PYTHON_VERSION: 3.11
   AWS_REGION: us-east-1
-  ECR_REPOSITORY: meta/hello-world
+  ECR_REPOSITORY: meta/hello-world 
+permissions:
+  id-token: write
+  contents: read
 
 jobs:
   # Step 1: Install and Build
